@@ -1,4 +1,4 @@
-eu/// Cálculo do Indíce de Massal Corporal
+/// Cálculo do Indíce de Massal Corporal
 
 #include <stdio.h>
 #include <math.h>
@@ -605,6 +605,31 @@ int main() {
     // Estrutura: for (inicialização; condição; incremento)
     for (int i = 0; i < 5; i++) {
         printf("Repetição número: %d\n", i);
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    float peso;
+
+    printf("Digite o peso do atleta (kg): ");
+    scanf("%f", &peso);
+
+    // Estrutura de decisão para categorias de peso
+    if (peso < 60.0) {
+        printf("Categoria: Peso Pena\n");
+    } 
+    else if (peso >= 60.0 && peso < 75.0) {
+        printf("Categoria: Peso Leve\n");
+    } 
+    else if (peso >= 75.0 && peso < 90.0) {
+        printf("Categoria: Peso Médio\n");
+    } 
+    else {
+        printf("Categoria: Peso Pesado\n");
     }
 
     return 0;
