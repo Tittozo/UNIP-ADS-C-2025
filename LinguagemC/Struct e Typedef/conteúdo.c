@@ -650,3 +650,34 @@ int main() {
 
     return 0;
 }
+
+#include <stdio.h>
+#include <string.h>
+
+// 1. Criando um apelido para um tipo primitivo
+typedef unsigned int km;
+
+// 2. Criando um apelido para uma struct (muito comum)
+typedef struct {
+    char modelo[50];
+    int ano;
+    km quilometragem; // Usando o typedef 'km' aqui dentro
+} Carro;
+
+int main() {
+    // Sem o typedef, teríamos que escrever "struct Carro meuCarro"
+    Carro meuCarro;
+
+    // Atribuindo valores
+    strcpy(meuCarro.modelo, "Toyota Corolla");
+    meuCarro.ano = 2023;
+    meuCarro.quilometragem = 15000;
+
+    // Exibindo os dados
+    printf("--- Dados do Veículo ---\n");
+    printf("Modelo: %s\n", meuCarro.modelo);
+    printf("Ano: %d\n", meuCarro.ano);
+    printf("Distância percorrida: %u km\n", meuCarro.quilometragem);
+
+    return 0;
+}
