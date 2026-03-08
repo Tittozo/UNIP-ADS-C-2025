@@ -1,6 +1,7 @@
-
 # Linguagem C para UNIP - ADS
 Este repositório é dedicado ao aprendizado, exercícios e projetos desenvolvidos na Linguagem C durante o curso de Análise e             Desenvolvimento de Sistemas (ADS) da Universidade Paulista (UNIP).
+
+![UNIP](https://img.shields.io/badge/UNIP-ADS-blue?style=for-the-badge)
 
 A disciplina de Linguagem C, geralmente nos semestres iniciais, é fundamental para o desenvolvimento da Lógica de Programação e para a compreensão de como os computadores gerenciam a memória e executam instruções.
 
